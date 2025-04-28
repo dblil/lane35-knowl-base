@@ -15,6 +15,8 @@ vbox_nat_network_check() {
 echo "Checking for existing VBoxManage NAT Networks"
 vbox_nat_network_check
 
+# add natnetwork with command line parameters if no existing nat networks are found
+
 vbox_nat_network_add() {
     # Check the number of command line parameters
     if [[ ${!#} -ne 2 ]]; then
